@@ -1,0 +1,7 @@
+- Extend existing tables and services when an equivalent exists.
+- Product/category/coupon master data is database-driven and editable by admin users.
+- Deactivate master data instead of deleting it when history may reference it.
+- Order item base_price and line_total remain invoice-time snapshots.
+- Never place credentials, production URLs, or customer/order records in migration artifacts.
+- The target database is independent and contains no copied source production data.
+- Backend-owned billing flows use authenticated Supabase RPCs; coupons and advance completion are server-authoritative.

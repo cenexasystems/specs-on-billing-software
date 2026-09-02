@@ -1,0 +1,6 @@
+{
+  "business": { "name": "Purple Boutique", "currency": "INR", "tax": { "enabled": false, "rate": 0 }, "invoicePrefix": "PB-" },
+  "requiredTables": ["profiles", "categories", "products", "product_variants", "product_prices", "lens_types", "lens_addons", "coupons", "orders", "order_items", "advance_orders", "advance_order_payments", "advance_order_timeline"],
+  "seedPolicy": "demo-only",
+  "sourceDatabaseAllowed": false
+}

@@ -1,0 +1,4 @@
+{ "bugs": [
+  { "id": "catalog-lens-management-001", "severity": "high", "status": "fixed", "summary": "Catalog panel exposed lens type/add-on history but not product name, price, lens type, or description editing.", "rootCause": "No product editor existed in the catalog configuration panel; product edits were only reachable through the legacy Products sub-tab.", "fix": "Added a database-backed product editor to CatalogPricingPanel using the product primary key and verified returned values after update." },
+  { "id": "catalog-zero-price-001", "severity": "medium", "status": "fixed", "summary": "Unwanted zero-price Single Vision Lite remained active in billing.", "rootCause": "The supplied seed intentionally created the zero-price item and no archive migration followed the later business decision.", "fix": "Applied migration 0006 to deactivate only that catalog row while preserving its history." }
+] }

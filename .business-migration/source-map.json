@@ -1,0 +1,9 @@
+{
+  "project": { "source": "reference-source", "target": "generic-billing-template", "auditedAt": "2026-08-29" },
+  "features": [
+    { "name": "Admin dashboard", "files": ["src/pages/Dashboard.tsx"], "services": ["src/lib/supabase.ts"], "tables": ["profiles", "categories", "products", "coupons", "orders", "order_items"], "classification": "reusable", "businessDependencies": [], "knownProblems": [] },
+    { "name": "POS and invoices", "files": ["src/pages/Pos.tsx", "src/services/orderService.ts", "src/components/Invoice.tsx"], "services": ["src/services/orderService.ts"], "tables": ["orders", "order_items"], "classification": "reusable", "businessDependencies": [], "knownProblems": [] },
+    { "name": "Catalog and variants", "files": ["src/store/store.ts", "src/services/productService.ts", "src/services/variantService.ts"], "services": [], "tables": ["categories", "products", "product_variants"], "classification": "database-driven", "businessDependencies": [], "knownProblems": [] },
+    { "name": "Pricing and optical masters", "files": ["src/components/dashboard/CatalogPricingPanel.tsx"], "services": [], "tables": ["product_prices", "lens_types", "lens_addons"], "classification": "database-driven", "businessDependencies": [], "knownProblems": [] }
+  ]
+}

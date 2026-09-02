@@ -1,0 +1,7 @@
+- Reused existing `categories`, `products`, `product_variants`, `coupons`, `orders`, and `order_items` tables.
+- Added `product_prices` for immutable price history because existing order items already snapshot historical sale prices.
+- Added `lens_types` and `lens_addons` as independent admin masters so optical configuration is not hard-coded in React.
+- Kept existing `price`, `offer_price`, and POS calculation path as the current-price source to avoid a competing billing system.
+- Replaced the legacy migration chain with `supabase/migrations/0001_purple_boutique_backend.sql`.
+- Invoice and advance receipt numbers use database sequences with the `PB-` prefix.
+- The previous configured Supabase project was removed from `.env`; the new project URL and publishable key remain required inputs.

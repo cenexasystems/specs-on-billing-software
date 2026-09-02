@@ -1,0 +1,5 @@
+{
+  "iterations": [
+    { "iteration": 1, "checks": 4, "passed": 2, "failed": 2, "criticalFailures": 1, "notes": "Build and lint passed. Local SQL lint could not connect because local Postgres/Docker is unavailable. Supabase dry-run was blocked because the old project was configured and new project credentials were not supplied; no push occurred." }
+  ]
+}
