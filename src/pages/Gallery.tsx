@@ -170,7 +170,7 @@ export default function Gallery() {
           transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
         >
           <p className="text-[10px] font-black uppercase tracking-[0.26em] text-[#8a5b3d] mb-4">
-            Purple Boutique
+            Specson
           </p>
           <h1 className="text-[2.8rem] sm:text-[3.6rem] font-black text-[#111111] tracking-tight leading-[1.02] mb-4">
             Inside Our Store

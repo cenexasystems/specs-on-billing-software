@@ -22,11 +22,11 @@ export type BusinessConfig = {
 const env = (key: string, fallback: string) => (import.meta.env[key] as string | undefined)?.trim() || fallback
 
 export const businessConfig: BusinessConfig = {
-  name: env('VITE_BUSINESS_NAME', 'Purple Boutique'),
-  legalName: env('VITE_BUSINESS_LEGAL_NAME', 'Purple Boutique'),
+  name: env('VITE_BUSINESS_NAME', 'Specson'),
+  legalName: env('VITE_BUSINESS_LEGAL_NAME', 'Specson'),
   ownerName: env('VITE_BUSINESS_OWNER', ''),
-  logo: env('VITE_BUSINESS_LOGO', '/purple-boutique-logo.svg'),
-  favicon: env('VITE_BUSINESS_FAVICON', '/purple-boutique-mark.svg'),
+  logo: env('VITE_BUSINESS_LOGO', '/specs-on-logo.png'),
+  favicon: env('VITE_BUSINESS_FAVICON', '/specs-on-logo.png'),
   phone: env('VITE_BUSINESS_PHONE', ''),
   whatsapp: env('VITE_WHATSAPP_NUMBER', ''),
   email: env('VITE_BUSINESS_EMAIL', ''),
@@ -39,8 +39,8 @@ export const businessConfig: BusinessConfig = {
     label: env('VITE_TAX_LABEL', 'Tax'),
   },
   invoicePrefix: env('VITE_INVOICE_PREFIX', 'INV'),
-  receiptFooter: env('VITE_RECEIPT_FOOTER', 'Thank you for choosing Purple Boutique.'),
-  invoiceFooter: env('VITE_INVOICE_FOOTER', 'Thank you for choosing Purple Boutique.'),
+  receiptFooter: env('VITE_RECEIPT_FOOTER', 'Thank you for choosing Specson.'),
+  invoiceFooter: env('VITE_INVOICE_FOOTER', 'Thank you for choosing Specson.'),
   theme: {
     primary: env('VITE_THEME_PRIMARY', '#4f46e5'),
     accent: env('VITE_THEME_ACCENT', '#0f766e'),

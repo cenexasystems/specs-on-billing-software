@@ -3,5 +3,5 @@
   <rect width="800" height="800" fill="#ecfdf5"/>
   <circle cx="400" cy="330" r="170" fill="#d1fae5"/>
   <path d="M260 305h280l-28 275H288l-28-275zm70 0c0-78 28-125 70-125s70 47 70 125" fill="none" stroke="#047857" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="400" y="690" text-anchor="middle" fill="#111111" font-family="Georgia, serif" font-size="54" font-weight="700">Purple Boutique</text>
+  <text x="400" y="690" text-anchor="middle" fill="#111111" font-family="Georgia, serif" font-size="54" font-weight="700">Specson</text>
 </svg>

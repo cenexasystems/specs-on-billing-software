@@ -1,4 +1,4 @@
-# Purple Boutique Billing
+# Specson Billing
 
 An independent React, TypeScript, Vite, and Supabase billing application extracted from an audited reference implementation. It is designed to support a new shop through configuration and database data, not source-code renaming.
 

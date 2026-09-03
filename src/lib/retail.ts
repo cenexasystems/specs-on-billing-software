@@ -87,7 +87,7 @@ export const formatInvoiceNo = (invNo: unknown): string => {
   // Preserve INV prefix format as-is
   if (/^INV/i.test(raw)) return raw
 
-  // Preserve Purple Boutique invoice and advance-receipt numbers as-is.
+  // Preserve legacy invoice and advance-receipt numbers as-is.
   if (/^PB-/i.test(raw)) return raw
 
   // Pure 8-digit number

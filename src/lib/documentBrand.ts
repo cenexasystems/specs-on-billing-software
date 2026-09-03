@@ -13,7 +13,7 @@ export const DOCUMENT_COLORS = {
 
 export function assertBusinessContactConfigured() {
   if (!BRAND_PHONE_DISPLAY) {
-    throw new Error('Purple Boutique phone is not configured. Set VITE_BUSINESS_PHONE before generating documents.')
+    throw new Error('Specson phone is not configured. Set VITE_BUSINESS_PHONE before generating documents.')
   }
 }
 

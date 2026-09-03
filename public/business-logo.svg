@@ -4,5 +4,5 @@
   <rect width="320" height="120" rx="24" fill="#eef2ff"/>
   <circle cx="62" cy="60" r="30" fill="#4f46e5"/>
   <path d="M50 60h24M62 48v24" stroke="white" stroke-width="6" stroke-linecap="round"/>
-  <text x="108" y="68" fill="#312e81" font-family="Arial, sans-serif" font-size="25" font-weight="700">Purple Boutique</text>
+  <text x="108" y="68" fill="#312e81" font-family="Arial, sans-serif" font-size="25" font-weight="700">Specson</text>
 </svg>

@@ -867,7 +867,7 @@ export default function Home() {
                 Visit Our Store
               </h2>
               <p className="text-[#374151] text-[14px] leading-[1.7] font-medium mb-6">
-                Visit Purple Boutique for tailoring, jewellery, accessories, perfume, and parcel services. Our team will help you find the right option for your needs.
+                Visit Specson for optical billing, spectacles, frames, lenses, and services. Our team will help you find the right option for your needs.
               </p>
 
               <div className="space-y-3.5">

@@ -23,7 +23,7 @@ export async function advanceReceiptPdf(order: AdvanceOrder) {
   const money = [[ 'Total order amount', order.total_amount ], [ 'Deposit paid', order.deposit_amount ], [ 'Remaining balance', order.remaining_balance ]] as const
   money.forEach(([label, value], index) => { const rowY = y + 11 + index * 11; doc.setFont('helvetica', index === 2 ? 'bold' : 'normal'); doc.setTextColor(index === 2 ? DOCUMENT_COLORS.primary : DOCUMENT_COLORS.ink); doc.text(label, 22, rowY); doc.text(formatCurrency(value), 188, rowY, { align: 'right' }) })
   doc.setFont('helvetica', 'bold'); doc.setTextColor(DOCUMENT_COLORS.discount); doc.setFontSize(9); doc.text('This receipt records an advance payment only. It is not a final invoice.', 105, y + 55, { align: 'center' })
-  drawBrandFooter(doc, 'THANK YOU FOR CHOOSING PURPLE BOUTIQUE')
+  drawBrandFooter(doc, 'THANK YOU FOR CHOOSING SPECSON')
   return new File([doc.output('blob')], `Advance-Receipt-${order.deposit_id}.pdf`, { type: 'application/pdf' })
 }
 
