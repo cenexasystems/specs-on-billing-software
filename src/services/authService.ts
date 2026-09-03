@@ -16,15 +16,8 @@ export interface AuthUser {
 
 const USE_LOCAL_AUTH_FALLBACK = import.meta.env.DEV && !isSupabaseConfigured
 
-// The UI can use a short username while Supabase Auth continues to use its
-// required email identity internally. The internal identity is configurable
-// and is never shown in the login form.
-const ADMIN_USERNAME = String(import.meta.env.VITE_ADMIN_USERNAME || 'admin').trim().toLowerCase()
-const ADMIN_AUTH_EMAIL = String(import.meta.env.VITE_ADMIN_AUTH_EMAIL || '').trim().toLowerCase()
-
 const resolveLoginEmail = (login: string) => {
-  const normalized = login.trim().toLowerCase()
-  return normalized === ADMIN_USERNAME && ADMIN_AUTH_EMAIL ? ADMIN_AUTH_EMAIL : normalized
+  return login.trim().toLowerCase()
 }
 
 type LocalUser = {

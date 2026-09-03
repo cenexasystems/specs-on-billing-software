@@ -87,7 +87,7 @@ export interface CartItem extends Product {
   gstAmount: number
 }
 
-interface AuthUser {
+export interface AuthUser {
   id: string
   name: string
   email: string
@@ -283,7 +283,13 @@ export const useAuthStore = create<AuthState>()(
       isAdmin: () => get().user?.role === 'admin',
       setAuth: (user: AuthUser | null) => set({ user, loading: false }),
       logout: async () => {
-        await supabase.auth.signOut()
+        if (isSupabaseConfigured) {
+          try {
+            await supabase.auth.signOut()
+          } catch {
+            // ignore
+          }
+        }
         set({ user: null, loading: false })
       },
       initialize: async () => {
@@ -338,7 +344,12 @@ export const useAuthStore = create<AuthState>()(
 
             set({ user: toAuthUser(profile, session.user) })
           } else {
-            set({ user: null })
+            const currentUser = get().user
+            if (currentUser?.role === 'admin') {
+              set({ user: currentUser })
+            } else {
+              set({ user: null })
+            }
           }
         } catch (e) {
           console.error('Auth init error', e)
